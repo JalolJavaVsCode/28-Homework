@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #18191C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box{
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* align-items: center */
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.child{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #2E9AFF;
+    border-radius: 25px;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.subchild{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #2E9AFF;
+    border-radius: 25px;
+    margin-left: 50px;
+}
+
+
+@keyframes animate{
+    0%{
+        width: 50px;
+        height: 50px;
+        background-color: #F498AD;
+    }
+    50%{
+        width: 50px;
+        height: 200px;
+        background-color: #7F6EDB;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        background-color: #2E9AFF;
+    }
+}
+
+
+.second__sub__box{
+    display: flex;
+    width: 250px;
+    height: 200px;
+}
+
+
+.subbox{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: flex-end;
+}
